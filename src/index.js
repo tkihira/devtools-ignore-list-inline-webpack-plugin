@@ -1,4 +1,5 @@
-const { Compilation } = require('webpack');
+import webpack from 'webpack';
+// const { Compilation } = require('webpack');
 
 class DevToolsIgnoreListInlinePlugin {
 
@@ -13,7 +14,7 @@ class DevToolsIgnoreListInlinePlugin {
             compilation.hooks.processAssets.tap(
                 {
                     name: 'DevToolsIgnoreListInlinePlugin',
-                    stage: Compilation.PROCESS_ASSETS_STAGE_DEV_TOOLING,
+                    stage: webpack.Compilation.PROCESS_ASSETS_STAGE_DEV_TOOLING,
                 },
                 (assets) => {
                     for (const [filename, asset] of Object.entries(assets)) {
@@ -36,4 +37,5 @@ class DevToolsIgnoreListInlinePlugin {
     }
 }
 
-module.exports = DevToolsIgnoreListInlinePlugin;
+// module.exports = DevToolsIgnoreListInlinePlugin;
+export default DevToolsIgnoreListInlinePlugin;
