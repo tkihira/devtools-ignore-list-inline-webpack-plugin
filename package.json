@@ -1,0 +1,14 @@
+{
+  "name": "devtools-ignore-list-inline-webpack-plugin",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Takuo Kihira",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "webpack": "^5.96.1"
+  }
+}
