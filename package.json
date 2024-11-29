@@ -1,12 +1,12 @@
 {
   "name": "devtools-ignore-list-inline-webpack-plugin",
-  "version": "0.0.2",
-  "type": "module",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "version": "0.0.3",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "exports": {
-    "require": "./dist/index.cjs.js",
-    "import": "./dist/index.esm.js"
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
   },
   "scripts": {
     "build": "npx tsup",

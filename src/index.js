@@ -1,4 +1,4 @@
-import { Compilation } from 'webpack';
+const { Compilation } = require('webpack');
 
 class DevToolsIgnoreListInlinePlugin {
 
@@ -36,7 +36,4 @@ class DevToolsIgnoreListInlinePlugin {
     }
 }
 
-// hack to support commonjs
-DevToolsIgnoreListInlinePlugin.default = DevToolsIgnoreListInlinePlugin;
-
-export default DevToolsIgnoreListInlinePlugin;
+module.exports = DevToolsIgnoreListInlinePlugin;

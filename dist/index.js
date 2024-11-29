@@ -1,5 +1,5 @@
 // src/index.js
-import { Compilation } from "webpack";
+var { Compilation } = require("webpack");
 var DevToolsIgnoreListInlinePlugin = class {
   constructor(options) {
     this.options = {
@@ -34,8 +34,4 @@ var DevToolsIgnoreListInlinePlugin = class {
     });
   }
 };
-DevToolsIgnoreListInlinePlugin.default = DevToolsIgnoreListInlinePlugin;
-var src_default = DevToolsIgnoreListInlinePlugin;
-export {
-  src_default as default
-};
+module.exports = DevToolsIgnoreListInlinePlugin;
