@@ -1,14 +1,26 @@
 {
   "name": "devtools-ignore-list-inline-webpack-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
-  "main": "src/index.js",
-  "scripts": {},
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "exports": {
+    "require": "./dist/index.cjs.js",
+    "import": "./dist/index.esm.js"
+  },
+  "scripts": {
+    "build": "npx tsup",
+    "clean": "cd dist && rm *"
+  },
   "keywords": [],
   "author": "Takuo Kihira",
   "license": "MIT",
   "description": "",
   "dependencies": {
     "webpack": "^5.96.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
   }
 }
