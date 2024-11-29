@@ -13,7 +13,7 @@ class DevToolsIgnoreListInlinePlugin {
             compilation.hooks.processAssets.tap(
                 {
                     name: 'DevToolsIgnoreListInlinePlugin',
-                    stage: webpack.Compilation.PROCESS_ASSETS_STAGE_DEV_TOOLING,
+                    stage: Compilation.PROCESS_ASSETS_STAGE_DEV_TOOLING,
                 },
                 (assets) => {
                     for (const [filename, asset] of Object.entries(assets)) {
