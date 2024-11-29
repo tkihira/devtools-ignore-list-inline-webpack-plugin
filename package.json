@@ -1,6 +1,6 @@
 {
   "name": "devtools-ignore-list-inline-webpack-plugin",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "commonjs",
   "main": "src/index.js",
   "scripts": {},

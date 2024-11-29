@@ -17,7 +17,6 @@ class DevToolsIgnoreListInlinePlugin {
                 },
                 (assets) => {
                     for (const [filename, asset] of Object.entries(assets)) {
-                        const fullPath = path.resolve(compilation.outputOptions.path, filename);
                         if (this.options.isTarget(filename)) {
                             const code = asset.source().toString();;
                             const sourceMapContent = `{"version":3,"file":"${filename}","mappings":"AAAA","sources":["${filename}"],"sourcesContent":[""],"ignoreList":[0]}`;
