@@ -1,5 +1,4 @@
-import webpack from 'webpack';
-// const { Compilation } = require('webpack');
+const { Compilation } = require('webpack');
 
 class DevToolsIgnoreListInlinePlugin {
 
@@ -37,5 +36,4 @@ class DevToolsIgnoreListInlinePlugin {
     }
 }
 
-// module.exports = DevToolsIgnoreListInlinePlugin;
-export default DevToolsIgnoreListInlinePlugin;
+module.exports = DevToolsIgnoreListInlinePlugin;
